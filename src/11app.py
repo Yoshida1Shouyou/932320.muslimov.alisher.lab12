@@ -13,12 +13,12 @@ def index():
     return render_template("11home.html")
 
 
-@app.route("/calc", methods=["GET"])
+@app.route("/11calculater", methods=["GET"])
 def calc_view():
     return render_template("11calculater.html")
 
 
-@app.route("/calc", methods=["POST"])
+@app.route("/11calculater", methods=["POST"])
 def calc_process_view():
     first_number = request.form.get("first_number") or ""
     second_number = request.form.get("second_number") or ""
